@@ -1,0 +1,21 @@
+#coding:utf-8
+
+# Un comentaire d'une seule ligne
+
+"""
+commentaires de
+plusieur lignes
+"""
+
+# Afficer du texte dans le terminal
+# print("le texte que tu veux")
+# print('le texte voulu') <= pour utiliser un apostrophe sous cette forme ajouté un anti-slash devant l'apostrophe print('l\'éléctricien')
+
+print('Hello Mother Fucker XiiiiiiX\n')
+print('J\'aime un peu trop la glace\n')
+print("ADMIREZ L'ENVERGURE DE MON CUL\n")
+
+# \t : tabullation
+# \n : passe a la ligne
+
+print("\tJe peux aussi \n faire ça")
