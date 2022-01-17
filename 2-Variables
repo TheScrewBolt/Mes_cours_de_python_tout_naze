@@ -1,0 +1,67 @@
+#coding:utf-8
+
+"""
+Régles pour Nommé une Variable :
+- Doit commencer par une Lettre ou un Underscores
+- Ne pas contenir de Caractére spéciaux
+- Ne pa contenir d'espaces
+- Peu contenir des Underscores
+
+Types de données Standards:
+- Entier Numérique (int)
+- Nombre Flottant (float)
+- Chaine de caractères (Str)
+- Booléen (bool)
+
+Fonctions Vues:
+- print()   -> Afficher a l'écran
+- input()   -> Demandé un variable
+- type()    -> Retourne le Type d'une donnée, Variable, etc.
+
+ int(), float(), str(), bool() -> "caster" une donnée, la convertire en un type
+
+- str.format()-> Formater une chaine
+
+"""
+#-----------------------------------------------------------------------------#
+
+scoreJoueur = 201
+couleurJoueur = 0xFee500
+experiencesJoueur = 1220.5
+pseudoJoueur = 'DarkHitachi27'
+banJoueur = False
+
+print(type(scoreJoueur))
+print(type(couleurJoueur))
+print(type(pseudoJoueur))
+print(type(experiencesJoueur))
+print(type(banJoueur))
+
+#-----------------------------------------------------------------------------#
+
+#Afficher des variable dans du texte
+
+#Méthode classique
+print("\nPseudo:", pseudoJoueur, "\nScore:", scoreJoueur, "Pts")
+
+#Petit Triks
+texte = "\nle score du compte de {} et {}pts, {} possede actuelement {} Xp."
+print(texte.format(pseudoJoueur, scoreJoueur, pseudoJoueur, experiencesJoueur))
+
+#Ou
+print("\nen effet ! le score du compte de {} et {}pts, {} possede actuelement {} Xp.".format(pseudoJoueur, scoreJoueur, pseudoJoueur, experiencesJoueur))
+
+#-----------------------------------------------------------------------------#
+
+nomJoueur = input("choisisez un nom: ")
+
+print("Bienvenue,", nomJoueur)
+
+#-----------------------------------------------------------------------------#
+
+prixHT = input("Entrez un prix HT : ")
+prixHT = int(prixHT)
+
+prixTTC = prixHT + (prixHT*20/100)
+
+print("Prix TTC :", prixTTC)
