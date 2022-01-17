@@ -1,0 +1,40 @@
+#coding:utf-8
+
+"""
+Operateur en Python :   + (addition)
+                        - (soustraction)
+                        * (multiplication)
+                        / (division)
+                        % (modulo) -> Reste d'une division Euclidienne
+
+La priorité Opératoire est respecter dans les calculs
+
+[()] > [/] [*] [%] > [+] [-]
+
+Racourcis:
+
+Var = Var + X  <==>  Var += X
+
+Var = Var - X  <==>  Var -= X
+
+Var = Var * X  <==>  Var *= X
+
+Var = Var / X  <==>  Var /= X
+
+"""
+
+#---------------------------------------------------------------#
+
+Var1 = input("1er chiffre :")
+Var1 = int(Var1)
+Var2 = input("2eme chiffre :")
+Var2 = int(Var2)
+Var3 = input("3eme chiffre :")
+Var3 = int(Var3)
+
+Calcul = Var1*Var2*(Var1+Var3)
+Calcul = int(Calcul)
+
+print("{} x {} x ( {}+{} ) = {}".format(Var1, Var2, Var1, Var3, Calcul))
+
+#---------------------------------------------------------------#
