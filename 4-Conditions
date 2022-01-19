@@ -1,0 +1,88 @@
+#coding:utf-8
+
+"""
+Opérateur de comparaison:
+- == (égale à)
+- != (different de)
+- < (plus petit que)
+- > (plus grand que)
+- <= (inferieur ou egale à)
+- >= (superieur ou egale à)
+
+Mots clés de conditions:
+-if (si)
+-else (sinon)
+-elif (sinon si)
+
+Condition multiples:
+- and (ET)
+- or (OU)
+- in / not in (dans / pas dans)
+"""
+#--------------------------------------------------------------------#
+
+id = "Screw"
+MDP = "M4t3ub"
+
+print("Interface de conexion")
+
+userId = input("Entrez votre identifiant : ")
+userPassword = input("Entrez votre Mot de passe : ")
+
+if userId == id and userPassword == MDP:
+    print("\nvous êtes connectés, Bienvenue", id)
+
+print("\nje ne suis plus dans le if")
+
+#--------------------------------------------------------------------#
+
+lettre = input("\nchoisir une lettre: ")
+
+if lettre in "aeiouy":
+    print("C'est une voyelle")
+if lettre not in "aeiouy":
+    print("C'est une consonne")
+
+#--------------------------------------------------------------------#
+
+lettre = input("\nchoisir une lettre: ")
+
+if lettre in "aeiouy":
+    print("C'est une voyelle")
+else:
+    print("C'est une consonne")
+
+#--------------------------------------------------------------------#
+
+age = input("\nquel est votre ages ? ")
+age = int(age)
+
+if age < 18:
+    print("vous etes mineur, car vous avez", age, "ans")
+elif age >= 18 and age <= 30:
+    print("vous etes majeur et vous n'avez pas encore depassé l'age canonique de 30 ans, car vous avez", age, "ans")
+else:
+    print("vous etes majeur et vous avez depassé l'age canonique de 30 ans, car vous avez", age, "ans")
+
+#--------------------------------------------------------------------#
+
+Jeu_charge = True
+
+if Jeu_charge:
+    print("\nle jeu est lancé")
+else:
+    print("\nLe jeu est éteint")
+
+#--------------------------------------------------------------------#
+
+"""
+(age > 0 And age <= 100) <===> (0 < age < 100)
+"""
+
+age = input("\nquel est votre ages ? ")
+age = int(age)
+
+if 0 < age <= 100:
+    print("age valide")
+else:
+    print("age invalide")
