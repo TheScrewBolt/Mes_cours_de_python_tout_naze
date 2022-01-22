@@ -1,0 +1,50 @@
+#coding:utf-8
+
+"""
+fonctions vues : print(), input()
+                 type(), int(), float(), str(), bool()
+"""
+#--------------------Rappel---------------------------------#
+
+print("Bonjour à tous ! x_x\n")
+
+#-----------------------------------------------------------#
+
+age = input("quel age as-tu ? ")
+age = int(age)
+
+print("Tu as {} ans.\n".format(age))
+
+#-----------------Creer un fonction------------------------#
+
+#fonction \/ \/ \/
+def direBonjour():
+    print("Wesh la street ! bien ou bien ? X-X\n")
+#fonction /\ /\ /\
+
+direBonjour() #La fonction a etais appelée
+
+#-----------------------------------------------------------#
+
+def dire(nom_personne, message_personne):
+    print("{} : {}".format(nom_personne,message_personne))
+
+dire("Screw","Je me suis taper ta soeur o_O")
+dire("Jake Gyllenhaal","T'AS FAIT QUOI ?!?!\n")
+
+#-----------------------------------------------------------#
+
+def dire2(nom_personne="Twitch", message_personne="Je vais leur passer sous le nez !"):
+    print("{} : {}".format(nom_personne,message_personne))
+#un valeur par defaut a etais ajouté  a la fonction dire2
+
+dire2("Screw")
+
+#-----------------------------------------------------------#
+
+def inventaire(armure, mainGauche, mainDroite):
+    print("\nINVENTAIRE\narmure : {}\nMain Gauche : {}\nMain Droite : {}\n".format(armure, mainGauche, mainDroite))
+
+#Preciser l'ordre de parametre comme on veut
+
+inventaire(mainDroite="dague", armure="cuire", mainGauche="bagette")
