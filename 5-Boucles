@@ -1,0 +1,52 @@
+#coding:utf-8
+
+"""
+Boucles     :
+- while
+- for
+
+Mots-clés   :
+- break (casse la bloucle)
+- continue (revient au début de la boucle)
+
+"""
+#----------------------------------------------------#
+
+compteur = 0
+
+while compteur < 5:
+    print("Je suis dans la boucle")
+    compteur += 1
+
+print("Je suis hors de la boucle\n")
+
+#----------------------------------------------------#
+
+jeuLance = True
+
+while jeuLance:
+    #Fais des instructions en rapport avec le Jeu_lance
+    choixMenu = input("> ")
+
+    if choixMenu == "again":
+        continue
+
+    elif choixMenu == "quit":
+        jeuLance = False
+
+    elif choixMenu == "hello":
+        print("Bonjour :) !")
+
+    else:
+        print("commandde invalide")
+
+print("à Bientot...")
+
+#----------------------------------------------------#
+
+phrase = "screw est un pur genis X-X"
+
+for letter in phrase:
+    print(lettre)
+
+print("a+")
