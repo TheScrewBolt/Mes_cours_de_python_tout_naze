@@ -3,6 +3,9 @@
 """
 fonctions vues : print(), input()
                  type(), int(), float(), str(), bool()
+
+Mot type       : Return (permet de retourner un varriable,
+il ne peu y avoir qu'un returne par condition dans une fonction)
 """
 #--------------------Rappel---------------------------------#
 
@@ -48,3 +51,23 @@ def inventaire(armure, mainGauche, mainDroite):
 #Preciser l'ordre de parametre comme on veut
 
 inventaire(mainDroite="dague", armure="cuire", mainGauche="bagette")
+
+#-----------------------------------------------------------#
+def inventaire(*listItems):
+    for item in listItems:
+        print(item)
+# "*" sert a preciser que le nombre de parametre est infini
+inventaire("épée")
+inventaire("épée", "arc", "poition matin\n")
+
+#-----------------------------------------------------------#
+
+def calculerSomme(nombre1,nombre2):
+    """
+    resultat = nombre1 + nombre2
+    return resultat
+    \/\/\/\/\/\/\/\/\/\/\/\/
+    """
+    return nombre1 + nombre2
+
+print(calculerSomme(6, 48))
