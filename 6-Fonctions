@@ -71,3 +71,22 @@ def calculerSomme(nombre1,nombre2):
     return nombre1 + nombre2
 
 print(calculerSomme(6, 48))
+
+#-------------------Fonction Lambda---------------------------#
+
+coucou = lambda:print("\nbonjour")
+
+coucou()
+#fonction qui ne sert qu'a une chose
+
+#-----------------------------------------------------------#
+
+TTC = lambda prixHT:prixHT + (prixHT*20/100)
+
+print("\n{}".format(TTC(24)))
+
+#-----------------------------------------------------------#
+
+Calcul = lambda a, b : a+b
+
+print("\n{}".format(Calcul(2, 4)))
